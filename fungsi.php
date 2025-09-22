@@ -1,5 +1,5 @@
 <?php
-    function perkenalan($nama ,$salam){
+    function perkenalan($nama ,$salam="Assalamualaikum"){
         echo $salam.", ";
         echo "Perkenalkan, nama saya ".$nama."<br/>";
         echo "Senang berkenalan dengan Anda <br/>";
@@ -12,5 +12,15 @@
 
     $saya = "Maulana";
     $ucapanSalam = "Selamat pagi";
-    perkenalan($saya, $ucapanSalam);
+    perkenalan($saya);
+    echo "<hr>";
+    
+    //fungsi hitung umur
+    function hitungUmur($thn_lahir, $thn_sekarang){
+        $umur = $thn_sekarang - $thn_lahir;
+        return $umur;
+    }
+
+    echo "Umur saya adalah ".hitungUmur(2006, 2025)." tahun<br/>";
+
 ?>
