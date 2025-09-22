@@ -6,9 +6,9 @@
     <h2>Array Terindeks</h2>
     <?php
         $Listdosen=["Elok Nur Hamadana","Unggul Pamenang","Bagas Nughraha"];
-        echo $Listdosen[2]."<br/>";
-        echo $Listdosen[0]."<br/>";
-        echo $Listdosen[2]."<br/>";
+        foreach ($Listdosen as $dosen) {
+            echo $dosen."<br/>";
+        }
     ?>
 </body>
 </html>
