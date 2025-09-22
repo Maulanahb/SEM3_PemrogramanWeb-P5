@@ -1,8 +1,11 @@
 <?php
-function tampilkanHaloDunia(){
-    echo"Halo Dunia <br>";
+function tampilkanAngka(int $jumlah,int $indeks=1){
+    echo"Perulangan ke- $indeks<br/>";
 
-    tampilkanHaloDunia();
+    //panggil fungsi itu sendiri (rekursif)
+    if($indeks < $jumlah){
+        tampilkanAngka($jumlah, $indeks+1);
 }
-tampilkanHaloDunia();
+}
+tampilkanAngka(20);
 ?>
